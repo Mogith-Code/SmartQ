@@ -70,4 +70,49 @@ Unlike conventional static token systems that offer fixed, inaccurate estimates:
 
 ---
 
+## 🎯 Target Markets & Applications
+
+| Industry | Use Case | Impact |
+| :--- | :--- | :--- |
+| 🏥 **Healthcare & Clinics** | Patient registration, Outpatient OPD queues, Lab reports | Reduces waiting room contagion risk & patient stress |
+| 🏦 **Banking & Finance** | Teller counters, Customer support, Loan consultations | Improves customer satisfaction & branch throughput |
+| 🏛️ **Government Services** | Passport/ID offices, Licensing, Municipal counters | Eliminates early morning crowding & streamlines footfall |
+| 🛍️ **Future Scope** | Telecom centers, Airport check-ins, Retail service desks | Scalable queuing layer for all walk-in services |
+
+---
+
+## 📈 Business Model & Strategy
+
+* **Revenue Model:** B2B SaaS subscription model tiered by number of counters, locations, and Monthly Active Users (MAU).
+* **Analytics Add-On:** Premium analytics modules for institutional capacity planning and staff optimization.
+* **Pilot Tier:** Low-barrier onboarding tier designed for smaller clinics and community service centers.
+
+---
+
+## 🗺️ Future Roadmap
+
+- [x] **Phase 1 (Short-Term):** MVP development & pilot testing with partner institutions (clinic + bank branch).
+- [ ] **Phase 2:** Refinement of AI prediction engine with real-world queue datasets & user experience enhancements.
+- [ ] **Phase 3 (Long-Term):** Expansion into telecom outlets, retail centers, and transport hubs to build the universal digital queuing layer.
+- [ ] **Phase 4:** Kiosk integration & voice accessibility features for non-smartphone users.
+
+---
+
+## 👥 Team Creonyx
+
+Formed for **CODE WITH WIE 2026**, Team **Creonyx** brings together passion, innovation, and technical expertise to solve everyday public challenges.
+
+| Name | Role | Contact |
+| :--- | :--- | :--- |
+| **Mogith Chandrakumar** | 👑 Team Leader | [kmogith1@gmail.com](mailto:kmogith1@gmail.com) \| 📞 0764096073 |
+| **Renujaan Ravichandran** | 💻 Team Member | — |
+| **Kathirsan Vivekanantharaja** | 💻 Team Member | — |
+| **Rubashalini Rubarajan** | 💻 Team Member | — |
+| **Asvinitha Thevaraja** | 💻 Team Member | — |
+
+---
+
+## 📄 License
+
+This project is submitted for **CODE WITH WIE 2026** by Team **Creonyx**. All rights reserved.
 
