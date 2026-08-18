@@ -24,4 +24,17 @@ void main() {
   );
 }
 
+class SmartQApp extends StatelessWidget {
+  const SmartQApp({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'SmartQ Virtual Queue System',
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.dark,
+      darkTheme: AppTheme.darkTheme,
+      home: const LoginScreen(),
+    );
+  }
+}
