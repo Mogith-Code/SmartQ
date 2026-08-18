@@ -59,5 +59,60 @@ class AppTheme {
         surface: AppColors.surface,
         background: AppColors.background,
         error: AppColors.error,
-
+      ),
+      textTheme: GoogleFonts.plusJakartaSansTextTheme(baseTextTheme).copyWith(
+        displayLarge: GoogleFonts.plusJakartaSans(
+          color: AppColors.textPrimary,
+          fontSize: 32,
+          fontWeight: FontWeight.bold,
+          letterSpacing: -0.5,
+        ),
+        displayMedium: GoogleFonts.plusJakartaSans(
+          color: AppColors.textPrimary,
+          fontSize: 26,
+          fontWeight: FontWeight.bold,
+        ),
+        titleLarge: GoogleFonts.plusJakartaSans(
+          color: AppColors.textPrimary,
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
+        ),
+        bodyLarge: GoogleFonts.plusJakartaSans(
+          color: AppColors.textPrimary,
+          fontSize: 16,
+        ),
+        bodyMedium: GoogleFonts.plusJakartaSans(
+          color: AppColors.textSecondary,
+          fontSize: 14,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: AppColors.inputFill,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+        hintStyle: TextStyle(
+          color: AppColors.textMuted,
+          fontSize: 14,
+          fontFamily: GoogleFonts.plusJakartaSans().fontFamily,
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.glassBorder, width: 1),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.glassBorder, width: 1),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.primaryCyan, width: 1.5),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: const BorderSide(color: AppColors.error, width: 1.5),
+        ),
+      ),
+    );
+  }
+}
  
