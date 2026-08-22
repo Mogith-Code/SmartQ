@@ -40,7 +40,7 @@ class AppColors {
     begin: Alignment.centerLeft,
     end: Alignment.centerRight,
   );
- static const LinearGradient cardGradient = LinearGradient(
+  static const LinearGradient cardGradient = LinearGradient(
     colors: [Color(0x1FFFFFFF), Color(0x05FFFFFF)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
@@ -57,7 +57,6 @@ class AppTheme {
         primary: AppColors.primaryCyan,
         secondary: AppColors.accentPurple,
         surface: AppColors.surface,
-        background: AppColors.background,
         error: AppColors.error,
       ),
       textTheme: GoogleFonts.plusJakartaSansTextTheme(baseTextTheme).copyWith(
@@ -89,7 +88,10 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: AppColors.inputFill,
-        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 18,
+        ),
         hintStyle: TextStyle(
           color: AppColors.textMuted,
           fontSize: 14,
@@ -105,7 +107,10 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: const BorderSide(color: AppColors.primaryCyan, width: 1.5),
+          borderSide: const BorderSide(
+            color: AppColors.primaryCyan,
+            width: 1.5,
+          ),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
@@ -115,4 +120,3 @@ class AppTheme {
     );
   }
 }
- 
