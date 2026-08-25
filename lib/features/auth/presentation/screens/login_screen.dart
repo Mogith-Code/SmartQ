@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: AppColors.textMuted.withOpacity(0.4),
+                  color: AppColors.textMuted.withValues(alpha: 0.4),
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -201,8 +201,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    AppColors.primaryCyan.withOpacity(0.25),
-                    AppColors.accentPurple.withOpacity(0.08),
+                    AppColors.primaryCyan.withValues(alpha: 0.25),
+                    AppColors.accentPurple.withValues(alpha: 0.08),
                     Colors.transparent,
                   ],
                 ),
@@ -221,8 +221,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
                   colors: [
-                    AppColors.accentPurple.withOpacity(0.25),
-                    AppColors.primaryBlue.withOpacity(0.08),
+                    AppColors.accentPurple.withValues(alpha: 0.25),
+                    AppColors.primaryBlue.withValues(alpha: 0.08),
                     Colors.transparent,
                   ],
                 ),
@@ -421,7 +421,7 @@ class _LoginScreenState extends State<LoginScreen> {
             gradient: AppColors.primaryGradient,
             boxShadow: [
               BoxShadow(
-                color: AppColors.primaryCyan.withOpacity(0.4),
+                color: AppColors.primaryCyan.withValues(alpha: 0.4),
                 blurRadius: 24,
                 spreadRadius: 2,
               ),
@@ -460,9 +460,9 @@ class _LoginScreenState extends State<LoginScreen> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
               decoration: BoxDecoration(
-                color: AppColors.primaryCyan.withOpacity(0.15),
+                color: AppColors.primaryCyan.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: AppColors.primaryCyan.withOpacity(0.4)),
+                border: Border.all(color: AppColors.primaryCyan.withValues(alpha: 0.4)),
               ),
               child: Row(
                 children: [
@@ -542,12 +542,12 @@ class _LoginScreenState extends State<LoginScreen> {
           color: isSelected ? AppColors.surfaceLight : Colors.transparent,
           borderRadius: BorderRadius.circular(16),
           border: isSelected
-              ? Border.all(color: AppColors.primaryCyan.withOpacity(0.5))
+              ? Border.all(color: AppColors.primaryCyan.withValues(alpha: 0.5))
               : null,
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.2),
+                    color: Colors.black.withValues(alpha: 0.2),
                     blurRadius: 8,
                   ),
                 ]
@@ -728,7 +728,7 @@ class _LoginScreenState extends State<LoginScreen> {
         gradient: AppColors.buttonGradient,
         boxShadow: [
           BoxShadow(
-            color: AppColors.primaryCyan.withOpacity(0.35),
+            color: AppColors.primaryCyan.withValues(alpha: 0.35),
             blurRadius: 18,
             offset: const Offset(0, 6),
           ),
@@ -770,7 +770,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildDivider() {
     return Row(
       children: [
-        Expanded(child: Divider(color: AppColors.glassBorder, thickness: 1)),
+        const Expanded(child: Divider(color: AppColors.glassBorder, thickness: 1)),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
@@ -782,7 +782,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
-        Expanded(child: Divider(color: AppColors.glassBorder, thickness: 1)),
+        const Expanded(child: Divider(color: AppColors.glassBorder, thickness: 1)),
       ],
     );
   }
