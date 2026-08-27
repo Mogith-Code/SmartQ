@@ -6,6 +6,8 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import '../../../../core/theme/app_theme.dart';
 import '../widgets/glass_container.dart';
+import 'register_screen.dart';
+import '../../../queue/presentation/screens/home_screen.dart';
 
 enum UserRole { customer, staff }
 
@@ -81,6 +83,10 @@ class _LoginScreenState extends State<LoginScreen> {
           ],
         ),
       ),
+    );
+
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(builder: (_) => const HomeScreen()),
     );
   }
 
@@ -610,7 +616,11 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Expanded(
             child: GestureDetector(
-              onTap: () => setState(() => _isSignUp = true),
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const RegisterScreen()),
+                );
+              },
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 200),
                 decoration: BoxDecoration(
@@ -862,6 +872,9 @@ class _LoginScreenState extends State<LoginScreen> {
               style: GoogleFonts.plusJakartaSans(color: AppColors.primaryCyan),
             ),
           ),
+        );
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (_) => const HomeScreen()),
         );
       },
       child: Row(
